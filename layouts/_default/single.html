@@ -1,8 +1,16 @@
 
 
 {{ define "main" }}
-    <div class="main-content">
+<div class="main-page">
+    <div class="flex-item main-content">
+            {{if not .IsHome}}<h1>{{.Title}}</h1>{{end}}
         {{ .Content }}
     </div>
+
+    <div class="toc" >
+        {{.TableOfContents}}
+    </div>
+
+</div>
 {{ end }}
 
