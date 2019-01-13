@@ -4,6 +4,7 @@
 <script src="{{"js/featherlight.min.js" | relURL}}"></script>
 
 {{if eq .Site.Params.highlightClientSide true}}
+<link href="{{"css/"|relURL}}{{.Site.Params.highlightStyle}}.css" rel="stylesheet">
 <script src="{{"js/highlight.pack.js" | relURL}}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 {{end}}
