@@ -2,12 +2,12 @@
 
 {{ define "main" }}
 <div class="main-page">
-    <div class="flex-item main-content">
+    <div class="flex-item main-content max70width">
             {{if not .IsHome}}<h1>{{.Title}}</h1>{{end}}
         {{ .Content }}
     </div>
 
-    <div class="toc" >
+    <div class="toc toc-fixed" >
         {{.TableOfContents}}
     </div>
 
